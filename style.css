@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800;900&display=swap');
+
+:root{
+    --color-primary: #112659;
+    --color-secondary: #0277DA;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    font-family:'Quicksand', sans-serif;
+    font-size: 14px;
+    color:black;
+}
+
+a{
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    margin:5px 0;
+    line-height: 1.7;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Nav Bar*/
+.navbar{
+    width:100%;
+    height:auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navbar-brand img{
+    width:95px;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    margin: 0 25px;
+    font-weight: 900;
+    
+}
+
+.navbar a{
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:var(--color-secondary);
+}
+
+.navbar-nav-left{
+    text-transform:uppercase;
+    flex:1;
+    margin-left: 10px;
+}
+
+
+.navbar-search-container{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding:0px 0;
+    width: 300px;
+    height:40px;
+    background-color: #eaeaea;
+    background-image: url("images/search.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 40px;
+}
+
+.navbar-search-container input{
+    background-color:#eaeaea;
+    align-items:center;
+    border:none;
+    padding-left:5px;
+    height:100%;
+    width:80%;
+}
+
+.navbar-search-container input:focus{
+    border-radius: 5px;
+    border: 2px solid #000;
+    outline: none;
+}
+
+.navbar-search-container img{
+    align-items:center;
+    width: 30px;
+}
+
